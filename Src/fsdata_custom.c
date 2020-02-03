@@ -260,30 +260,30 @@ int fs_open_custom(struct fs_file *file, const char *name)
 		len = engine_js_size;
 		file->data = ( const char * )engine_js;
 	}
-	else if ( strcmp( name, "/orange.html" ) == 0 )
-	{
-		HAL_GPIO_TogglePin( GPIOD, LD3_Pin);
-		file->data = ok;
-		len = strlen( ok );
-	}
-	else if ( strcmp( name, "/green.html" ) == 0 )
-	{
-		HAL_GPIO_TogglePin( GPIOD, LD4_Pin);
-		file->data = ok;
-		len = strlen( ok );
-	}
-	else if ( strcmp( name, "/red.html" ) == 0 )
-	{
-		HAL_GPIO_TogglePin( GPIOD, LD5_Pin);
-		file->data = ok;
-		len = strlen( ok );
-	}
-	else if ( strcmp( name, "/blue.html" ) == 0 )
-	{
-		HAL_GPIO_TogglePin( GPIOD, LD6_Pin);
-		file->data = ok;
-		len = strlen( ok );
-	}
+//	else if ( strcmp( name, "/orange.html" ) == 0 )
+//	{
+//		HAL_GPIO_TogglePin( GPIOD, LD3_Pin);
+//		file->data = ok;
+//		len = strlen( ok );
+//	}
+//	else if ( strcmp( name, "/green.html" ) == 0 )
+//	{
+//		HAL_GPIO_TogglePin( GPIOD, LD4_Pin);
+//		file->data = ok;
+//		len = strlen( ok );
+//	}
+//	else if ( strcmp( name, "/red.html" ) == 0 )
+//	{
+//		HAL_GPIO_TogglePin( GPIOD, LD5_Pin);
+//		file->data = ok;
+//		len = strlen( ok );
+//	}
+//	else if ( strcmp( name, "/blue.html" ) == 0 )
+//	{
+//		HAL_GPIO_TogglePin( GPIOD, LD6_Pin);
+//		file->data = ok;
+//		len = strlen( ok );
+//	}
 	else
 	{
 		len = index_html_size;
